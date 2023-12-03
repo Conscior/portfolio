@@ -20,9 +20,10 @@ import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
-  const { hasCopied, onCopy } = useClipboard("example@example.com");
+  const { hasCopied, onCopy } = useClipboard("abderr.ryad@gmail.com");
   return (
     <Flex
+      id="contact"
       //   bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"

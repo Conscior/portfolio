@@ -3,7 +3,7 @@ import { BsDownload } from "react-icons/bs";
 
 const Resume = () => {
   return (
-    <Box m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
+    <Box id="resume" m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
       <HStack align="center" justify="center" justifyItems="center">
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
           Download my Resume here

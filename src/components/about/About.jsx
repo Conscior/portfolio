@@ -9,6 +9,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { BsCodeSlash, BsBook, BsBriefcase } from "react-icons/bs";
 
 const Card = ({ heading, description, icon }) => {
   return (
@@ -45,7 +46,7 @@ const Card = ({ heading, description, icon }) => {
 
 const About = () => {
   return (
-    <Box m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
+    <Box id="about" m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
           About me
@@ -60,23 +61,23 @@ const About = () => {
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
             heading={"Coding Journey"}
-            // icon={<Icon as={FcAssistant} w={10} h={10} />}
+            icon={<Icon as={BsCodeSlash} w={10} h={10} color="red" />}
             description={
               "My coding journey kicked off back in 2018, and sparked a deeper curiosity for technology and a desire to shape the digital landscape. Starting with Python, I took my very first steps into the world of coding, fascinated by the endless possibilities and the ability to create something meaningful from scratch."
             }
           />
           <Card
             heading={"Education"}
-            // icon={<Icon as={FcCollaboration} w={10} h={10} />}
+            icon={<Icon as={BsBook} w={10} h={10} color="red" />}
             description={
               "In 2018, I enrolled in CESI EXIA, where I immersed myself in the fundamentals of software development. The structured learning environment provided a solid foundation, and I quickly progressed from novice coder to someone with a deep appreciation for the art and science of programming."
             }
           />
           <Card
             heading={"Work"}
-            // icon={<Icon as={FcDonate} w={10} h={10} />}
+            icon={<Icon as={BsBriefcase} w={10} h={10} color="red" />}
             description={
-              "Since then, my journey has been a continuous cycle of learning, experimenting, and refining my skills. I've had the opportunity to work on a variety of projects, each one contributing to my growth as a developer.."
+              "Since then, my journey has been a continuous cycle of learning, experimenting, and refining my skills. I've had the opportunity to work on a variety of projects, each one contributing to my growth as a developer."
             }
           />
           {/* <Card
